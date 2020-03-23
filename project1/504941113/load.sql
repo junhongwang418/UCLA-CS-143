@@ -1,0 +1,82 @@
+-- load Movie data
+LOAD DATA LOCAL INFILE '~/data/movie.del' 
+INTO TABLE Movie 
+FIELDS TERMINATED BY ","
+-- expect fields to be enclosed within " quoting characters
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+-- load Actor data
+LOAD DATA LOCAL INFILE '~/data/actor1.del' 
+INTO TABLE Actor 
+FIELDS TERMINATED BY ","
+OPTIONALLY ENCLOSED BY '"' 
+LINES TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE '~/data/actor2.del' 
+INTO TABLE Actor 
+FIELDS TERMINATED BY ","
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE '~/data/actor3.del' 
+INTO TABLE Actor 
+FIELDS TERMINATED BY ","
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+-- load Sales data
+LOAD DATA LOCAL INFILE '~/data/sales.del' 
+INTO TABLE Sales 
+FIELDS TERMINATED BY ","
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+-- load Director data
+LOAD DATA LOCAL INFILE '~/data/director.del' 
+INTO TABLE Director 
+FIELDS TERMINATED BY ","
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+-- load MovieGenre data
+LOAD DATA LOCAL INFILE '~/data/moviegenre.del' 
+INTO TABLE MovieGenre 
+FIELDS TERMINATED BY ","
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+-- load MovieDirector data
+LOAD DATA LOCAL INFILE '~/data/moviedirector.del' 
+INTO TABLE MovieDirector 
+FIELDS TERMINATED BY ","
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+-- load MovieActor data
+LOAD DATA LOCAL INFILE '~/data/movieactor1.del' 
+INTO TABLE MovieActor 
+FIELDS TERMINATED BY ","
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+LOAD DATA LOCAL INFILE '~/data/movieactor2.del' 
+INTO TABLE MovieActor 
+FIELDS TERMINATED BY ","
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+-- load MovieRating data
+LOAD DATA LOCAL INFILE '~/data/movierating.del' 
+INTO TABLE MovieRating 
+FIELDS TERMINATED BY ","
+OPTIONALLY ENCLOSED BY '"'
+LINES TERMINATED BY '\n';
+
+-- load MaxPersonID data
+INSERT INTO MaxPersonID (id)
+VALUES (69000);
+
+-- load MaxMovieID data
+INSERT INTO MaxMovieID (id)
+VALUES (4750);

@@ -2,6 +2,10 @@
 
 Professor: Carlo Zaniolo
 
-Midterm: 91
+Project1: 100/100
 
-Final: 83
+Project2: 94/100
+
+Midterm: 91/100
+
+Final: 83/100
